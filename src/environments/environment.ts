@@ -3,8 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url_api:'http://18.191.152.48/api/enums/categoriasMarket'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

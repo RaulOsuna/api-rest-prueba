@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, NgModule, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../services/api.service';
 
 import { Subject } from 'rxjs';
 
@@ -24,18 +24,18 @@ export class HomeComponent implements OnInit {
     
   }
 data_refresh(){
-  this.httpClient.get('http://18.191.152.48/api/enums/categoriasMarket').subscribe(data => {
-      this.data = JSON.stringify(data['data'])
-      for (let key in data['data']) {
-        console.log(data['data'][key])
-        this.keys.push({key: key, value: data['data'][key]});
-        this.dtTrigger.next();
-      }
-    }); 
+  
+  this.api.get_data().subscribe(response=>{
+    for (let key in response['data']) {
+      this.keys.push({key: key, value: response['data'][key]});
+    }
+    this.dtTrigger.next();
+  }); 
+  
+  
 }
 
   ngOnInit(): void {
-   
     this.data_refresh()
   }
   ngOnDestroy(): void {
