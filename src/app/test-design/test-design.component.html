@@ -1,0 +1,334 @@
+<!-- FORM WHEN THE CURSOS IS NOT ON THE BUBBLE -->
+
+
+
+<div class="row" style="width: 100%;">
+    <div class="col-xl-1" style="background-color: #F2F2F2;height: 100vh;overflow-y: auto;overflow-x: scroll;">
+        <div>
+            <ul>
+                <li>
+                    <a>
+                        <span>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                        </span>
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    <a>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/circled-a.png" />
+                    </a>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xl-10" style="height: 100vh;overflow: auto;">
+        <div class="area" >
+            <div>
+                <div class="bubble" style="height: 100%" >
+                    <div class="container_form">
+                        <div style="float: left;">
+                            <div class="input-group" style="margin-left: 5px;margin-top: 5px;">
+                                <span class="input-group-btn">
+                                    <div class="right-inner-addon">
+                                        <i class="fa fa-search"></i>
+                                        <input type="search" class="form-control" placeholder="Search" />
+                                    </div>
+                                </span>
+                                <button class="btn btn-default" style="background-color:#0D87E3;color:white;margin-left: 5px;" type="button">Upgrade your Plan</button>
+                            </div>
+                        </div>
+                        
+                        <div style="float: right;margin-top: 5px;margin-right: 5px;">
+                            <i class="fa fa-bell-o" aria-hidden="true" style="font-size: 30px;"></i>
+                            <span style="font-size: 30px;vertical-align: middle;"><strong>Mike James Lee</strong></span>
+                            <img src="../../assets/img/user.jpg" alt="Avatar" style="border-radius: 100%;width:50px;height:50px;">
+                        </div>
+                    </div>
+                    
+                
+                    <br/>
+                    <br/>
+                    
+                    <div class="tab" style="background-color: white; clear: both;">
+                        <div style="margin-left: 5px;">
+                            <img src="https://images.unsplash.com/photo-1593371256584-ac70d0ab43d1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OXx8fGVufDB8fHw%3D&w=1000&q=80" alt="Avatar" style="border-radius: 100%;" width="50px" height="50px">
+                            <span style="font-size: 23px;vertical-align: middle;"><strong>Design Board</strong><i class="fa fa-ellipsis-h"></i></span>
+                        </div>
+                        
+                        <button class="tablinks" (click)="clickHandle_js($event,'proyect_tab')" style="border-radius: 10px;">
+                            <strong>Proyects</strong>
+                        </button>
+                        <button class="tablinks" (click)="clickHandle_js($event,'image_tab')" style="border-radius: 10px;">
+                            <strong>Images</strong>
+                        </button>
+                        
+                    </div>
+                    <!-- TAB IMAGE -->
+                    <div id="image_tab" class="tabcontent">
+                        <div style="width: 100%;">
+                            <div style="float: left; margin-left: 5px;margin-top: 5px;">
+                                <span style="font-size: 18px;"><strong>ALL IMAGES</strong></span>
+                            </div>
+                            <div style="float: right;" align="center">
+                                <select name="select_filters" id="" class="form-control">
+                                    <option value="">Last created</option>
+                                    <option value="">Last modified</option>
+                                    <option value="">Last opened</option>
+                                    <option value="">Alphabetically</option>
+                                </select>
+                                <button class="btn" (click)="kanban_view_js($event,'kanban_view')"><i class="fa fa-th"></i></button>
+                                <button class="btn"(click)="list_view_js($event,'list_view')"><i class="fa fa-align-justify"></i></button>
+                            </div>
+                            
+                        </div>
+                        <div id="kanban_view">
+                            <div class="wrapper row" style="clear: both;">
+                                <div class="card_no_desc col-4" style="background-color: #0D87E3;">
+                                    <i class="fa fa-plus"  aria-hidden="true" style="color: white;font-size: 300%;position:absolute;top:45%;left:45%;"></i>        
+                                    <div class="tool">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                        <div class="tooltipform form-control" style="width: 20%;">
+                                            <button class="btn" ><i class="fa fa-pencil"></i>BUTTON</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card col-4">
+                                    
+                                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2014%2F11%2F12220214%2Fshutterstock_159281780.jpg"/>
+                                    <div class="info">
+                                        
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h1 style="color: black;font-size: 14px;text-overflow: ellipsis;">Family at the beach</h1>
+                                                <p style="color: black;font-size: 11px;text-overflow: ellipsis;">Created december 5</p>
+                                            </div>
+                                            <div class="col-5">
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+                                <div class="card col-4">
+                                    
+                                    <img src="http://happyfamily-solutions.com/wp-contenido/uploads/2016/11/contacto.jpg"/>
+                                    <div class="info">
+                                        
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h1 style="color: black;font-size: 14px;text-overflow: ellipsis;">HAPPY FAMILY</h1>
+                                                <p style="color: black;font-size: 11px;text-overflow: ellipsis;">Created november 25</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+                                <div class="card col-4">
+                                    
+                                    <img src="https://www.gannett-cdn.com/presto/2019/05/14/USAT/6717a231-f65a-48f9-ba0d-4486a3785a71-gradpic.jpg"/>
+                                    <div class="info">
+                                        
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h1 style="color: black;font-size: 14px;text-overflow: ellipsis;">GRADUATION</h1>
+                                                <p style="color: black;font-size: 11px;text-overflow: ellipsis;">Created january 25</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+                                <div class="card col-4">
+                                    
+                                    <img src="https://raisingchildren.net.au/__data/assets/image/0031/72994/Planning-a-teen-party-wide.jpg"/>
+                                    <div class="info">
+                                        
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <h1 style="color: black;font-size: 14px;text-overflow: ellipsis;">TEENS PARTY</h1>
+                                                <p style="color: black;font-size: 11px;text-overflow: ellipsis;">Created january 25</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </div>
+                                        </div>       
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div id="list_view">
+                            <table class="rwd-table">
+                                <tr>
+                                    <th>
+                                        <div>
+                                            <div class="card_no_desc col-4" style="background-color: #0D87E3;width: 30px;height: inherit;display:inline-block;vertical-align: middle;">
+                                                <i class="fa fa-plus"  aria-hidden="true" style="color: white;font-size: 100%;position:absolute;top:40%;left:40%;"></i>        
+                                            </div>
+                                            <div style="display:inline-block;vertical-align: middle;">
+                                                <span><strong>Create Image</strong></span>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th>Image ID</th>
+                                    <th>QTY</th>
+                                    <th>Content</th>
+                                    <th></th>
+                                </tr>
+                                <tbody>
+                                    <tr style="height: 100px;">
+                                        <td>
+                                            <div>
+                                                <div>
+                                                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2014%2F11%2F12220214%2Fshutterstock_159281780.jpg" alt="" style="max-height:100%; max-width:150px"> 
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </td>
+                                        <td>1102-00</td>
+                                        <td>5</td>
+                                        <td>icon here</td>
+                                        <td>icons here</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- TAB PROYECT -->
+                    <div id="proyect_tab" class="tabcontent">
+                        <div style="padding-left: 15px;">
+                            <h2>Welcome to proyect tab!!!</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>  
+              
+        </div>
+    </div>
+    <div class="col-xl-1" style="height: 100vh;">
+        <div align="center">
+            <ul style="border-width: 0.3px;border-style: solid;border-color: #E8E8E8;height: 100vh;">
+                <li id="comment">
+                    <button id="chatter_id_button"  class="btn btn-light"><i style="font-size: 30px;" style="color: #666666;" class="fa fa-comment" aria-hidden="true"></i></button>
+                    
+                </li>
+                
+                <br/>
+                <li id="code" style="color: #666666;">
+                    <button class="btn btn-light"><i style="font-size: 30px;" class="fa fa-code" style="color: #666666;" aria-hidden="true"></i></button>
+                </li>
+                <br/>
+                <li id="programm" >
+                    <button class="btn btn-light"><i style="font-size: 30px;" style="color: #666666;" class="">icon not found</i></button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2>interfaz del sidebar de la derecha</h2>
+<div class="chatting_form" align="center" style="border-width: 0.3px;border-style: solid;border-color: #E8E8E8;height: 50vh;width: 50vh;">
+    <div style="width:50%;min-width: 120px;margin-top: 5px;margin-bottom: 5px;">
+        <span class="input-group-btn">
+            <div class="right-inner-addon">
+                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                <textarea id="message_text_area"  class="form-control" placeholder="Hacer un comentario" ></textarea>
+            </div>
+            <div align="right">
+                <button class="btn btn-default" style="background-color:#0D87E3;color:white;margin-left: 5px;" type="button">Cancelar</button>
+                <button class="btn btn-default" style="background-color:#0D87E3;color:white;margin-left: 5px;" type="button">Enviar</button>
+            </div>
+        </span> 
+        
+    </div>
+    <div id="container_message" style="border-width: 0.3px;border-style: solid;border-color: #E8E8E8;">
+        <i class="fa fa-comments" aria-hidden="true" style="font-size: 60px;"></i>
+        <h1>¿Tienes algo que decir?</h1>
+        <h4>Haz algún comentario para iniciar una conversación, crear una nota o comentar en la mesa de trabajo.</h4>
+    </div>
+    <div id="container_message_options">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round">
+                            
+                        </span>
+                    </label>
+                    <span>
+                        Todos los comentarios son visibles
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <i class="fa fa-eye" aria-hidden="true" style="font-size: 25px;"></i>
+                <i class="fa fa-filter" aria-hidden="true" style="font-size: 25px;margin-left: 10px;"></i>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- form programming -->
+<br>
+<br>
+<h2>interfaz del sidebar de la derecha</h2>
+<div class="code_form" align="center" style="border-width: 0.3px;border-style: solid;border-color: #E8E8E8;height: 50vh;width: 50vh;">
+    <div style="width:50%;min-width: 120px;margin-top: 5px;margin-bottom: 5px;">
+        <div style="vertical-align: middle;">
+            <div>
+                <i class="fa fa-file-code-o" aria-hidden="true" style="font-size: 90px;"></i>
+            </div>
+            <span>
+                No hay disponibles variables de diseño. Cuando los diseñadores añadan colores y estilos de caracteres al panel de activos de XD, aparecerán aquí como variables de diseño para que puedas usarlos. Más información...
+            </span>
+        </div>
+    </div>
+</div>
+
